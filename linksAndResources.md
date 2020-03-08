@@ -24,6 +24,8 @@ difficulty.
 ------------------------
 ## Various resources
 
+This part contains various resources which I've come across and which I have found useful.
+
 ### Videos
 [F# for C# programmers - Scott Wlaschin](https://vimeo.com/223982162). Great introduction on F# and does exactly what it says on the tin
 [The Power of Composition - Scott Wlaschin](https://vimeo.com/254635723). This shows you how F# helps with composition.
