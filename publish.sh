@@ -3,3 +3,4 @@ tools/fsformatting.exe literate --processDirectory --inputDirectory "code" --out
 
 git add --all .
 git commit -a -m "${1}"
+git push
