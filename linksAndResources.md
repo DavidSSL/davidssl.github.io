@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Links ro resources
+title: Links to resources
 ---
 
 Here is a list of links to resources which I believe will help you learn F#. It is in order of increasing
