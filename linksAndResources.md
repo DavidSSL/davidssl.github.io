@@ -30,6 +30,9 @@ This part contains various resources which I've come across and which I have fou
 [F# for C# programmers - Scott Wlaschin](https://vimeo.com/223982162). Great introduction on F# and does exactly what it says on the tin
 [The Power of Composition - Scott Wlaschin](https://vimeo.com/254635723). This shows you how F# helps with composition.
 
+### Youtubers
+[The DevOwl](https://www.youtube.com/channel/UCOX5DkLyqctM-wkOAU_mUpA). Good and informative series about F#.
+
 ### Blogs
 [F# for fun and profit](https://fsharpforfunandprofit.com/). This is the reference par excellence for F# development. It contains depth and breadth.
 [F# Friday](https://bradcollins.com/tag/f-friday/). This is often where I end up when I need to refresh my memory on Higher Order Functions.
