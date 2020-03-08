@@ -1,6 +1,6 @@
 (*** raw ***)
 ---
-layout: post
+layout: page
 title: Introduction to this blog
 ----
 
