@@ -149,23 +149,27 @@ etc
 In F# this is trivial but in C# there is significantly more code that we have to write in order to achieve the same thing.
 
 So for instance in pseudo F# we would write
-
+```
 PaymentMethod
 | Cash
 | CreditCard
 | DebitCard
 | BitCoin
+```
 
 And a customer, again in pseudo F#, would be modelled as:
 
+```
 Customer{
   Name string
   Age int
   PaymentMethod PaymentMethod
 }
+```
 
 Then when it came time to pay, we would simply extract the method of payment and based upon each of the latter we'd invoke a different code pathway.
 
+```
 Pay (PaymentMethod paymentMethod, amount decimal)
 {
   if paymentMethod == Cash then
@@ -174,6 +178,7 @@ Pay (PaymentMethod paymentMethod, amount decimal)
     PayByCreditCard(amount)
   etc
 }
+```
 
 Effectively, you have the "Strategy Pattern" built into the language.
 
