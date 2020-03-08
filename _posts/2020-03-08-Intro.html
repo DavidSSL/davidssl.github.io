@@ -1,9 +1,132 @@
 ---
 layout: page
-title: Introduction to this blog
+title: Why I like functional programming (with an F# bias)
 ---
-<p>This is yet another blog but the focus of this is functional programming or at least my understanding of it.</p>
-<p>As a C# developer by day, it will come as no surprise that my functional language of choice is F#.</p>
-<p>Hopefully the information on here is useful to someone else other than myself.</p>
+<h2><a name="My-background-as-a-developer" class="anchor" href="#My-background-as-a-developer">My background as a developer</a></h2>
+<p>While I would consider myself to be of above average intelligence in certain areas, programming is not one of them.
+I would say that I am competent but nothing spectacular.</p>
+<p>As such I have been able to identify a few areas, in no particular order,
+where I have been lacking and which are ultimately relevant to why I now prefer functional programming as opposed to OOP.</p>
+<ul>
+<li>Weak basics and hacking mentality</li>
+<li>Dealing with complexity and accidental complexity in particular</li>
+<li>Tunnel vision</li>
+<li>Arrogance</li>
+</ul>
+<p>I got started with programming at a fairly late stage and my exposure to it was mainly during my university days.</p>
+<p>During that time, I hated it because I am not a natural for reasons I attribute to the areas I listed above.</p>
+<p>As part of my engineering course, I came across programming and really we only had a couple of courses on high level
+programming and I did struggle with it.</p>
+<p>Hence, as it is only human, I neglected it and only did the bare minimum.</p>
+<p>I would hack away at code until I would get the desired result and that would be it.</p>
+<p>However after I took six months out in industry as part of my course, I came to the realisation that I would have
+to improve my programming skills.</p>
+<p>As a result, I went to the <a href="https://www.kent.ac.uk">University of Kent at Canterbury</a> on a Computer Science conversion
+course very similar to this <a href="https://www.kent.ac.uk/courses/postgraduate/243/computer-science">one</a>.</p>
+<p>This was a great programme whereby I learned a lot and my basics improved.</p>
+<p>After that I started working as a developer mostly with Microsoft technologies and inevitably started using .NET and
+I have been programming in C# for a fair few years now.</p>
+<h2><a name="How-I-came-across-F" class="anchor" href="#How-I-came-across-F">How I came across F#</a></h2>
+<p>It was maybe 3 years ago that I had anything to do with F# and that was foisted upon me when I had to deal with <a href="https://fake.build/">Fake</a>.</p>
+<p>Although it is claimed that it is easy easy for C# developers to pick up FAKE, it certainly was not my experience.</p>
+<p>Therefore, I resisted it for a bit but then for a variety of reasons I had to understand FAKE better.</p>
+<p>As a result, and having learned from my mistake about not getting solid basics, I started learning F# since FAKE is written using the latter.</p>
+<h2><a name="Why-I-like-functional-programming-with-F" class="anchor" href="#Why-I-like-functional-programming-with-F">Why I like functional programming with F#</a></h2>
+<p>While I am still a novice, I much prefer functional programming (F#) to OOP (C#).</p>
+<p>For me it boils down to 2 issues:</p>
+<ul>
+<li>language</li>
+<li>abstraction models</li>
+</ul>
+<p>which are interlinked.</p>
+<h3><a name="Language" class="anchor" href="#Language">Language</a></h3>
+<p>I never realised it before learning about functional programming, but the paradigms upon which a language is based upon
+forces us to code in a certain way.</p>
+<p>However what is more subtle and pernicious is that it also forces us to think a certain way which leads to us to writing complex code.</p>
+<p>I have found that with C#, I have to fight with the language in order to do what I want to do as opposed to F#.
+With the latter I am able to focus more on the business problem at hand.</p>
+<p>As developers, we are not only required to code business logic, we are also meant to do so in a maintainable and readable way.</p>
+<p>Hence, in the development world, we have come up with the SOLID principles, design patterns, DRY, etc to address the maintenance
+and readability problem.</p>
+<p>However, this is a problem in itself because this requires significant investment and practice.</p>
+<p>For instance, when you first encounter the term "Strategy pattern" or "Liskov Substitution Principle",
+it can be a real slog to stop what you're doing, try to figure the concepts and then applying these concepts.</p>
+<p>Moreover, consider the Dependency Inversion Principle whereby in the world of C#, the reference is this <a href="https://www.manning.com/books/dependency-injection-principles-practices-patterns">book</a>
+by Steven van Deursen and Mark Seemann.
+While it is a fine book, I find it quite incomprehensible that we have to spend so much time and effort to learn this in order to
+address what I consider to be a language issue.</p>
+<p>So in effect, we're introducing accidental complexity in order to compensate for language deficiencies.</p>
+<h3><a name="Abstraction-models" class="anchor" href="#Abstraction-models">Abstraction models</a></h3>
+<p>This is an important one because we are talking about how we will model our solution to problem.</p>
+<p>With OOP, we think in terms of Object which have state and behaviour while with functional programming we think in terms of functions.</p>
+<p>This fundamental difference is very significant and this also somehow ties in to language.</p>
+<p>One of the things that we do as programmers is that we come up with abstractions to structure our software and more often than not we
+do it in an organic ad-hoc way.</p>
+<p>There is no guarantee that our abstractions are correct and they are generally superficial.</p>
+<p>However, there is a discipline which is very good with formalising and proving abstractions and that is mathematics,
+and in particular, a branch of mathematics known as category theory.</p>
+<p>The ideas of functional programming come from this discipline and hence why you have ideas such as pure functions i.e.
+for a bounded set of inputs you always have the same bounded set of outputs.</p>
+<p>Hence functional programming builds upon a solid mathematical background in order to build predictable system.</p>
+<p>I don't know about you but I much prefer to rely on the power of mathematics to write my system rather than relying on my own brain power.</p>
+<p>Someone else has done the heavy lifting and I much rather take advantage of that.</p>
+<h2><a name="How-functional-programming-helps-with-writing-better-systems" class="anchor" href="#How-functional-programming-helps-with-writing-better-systems">How functional programming helps with writing better systems</a></h2>
+<p>From a language level point of view, there are 2 big items</p>
+<ol>
+<li>Composition</li>
+<li>Algebraic sum types</li>
+</ol>
+<h3><a name="Composition" class="anchor" href="#Composition">Composition</a></h3>
+<p>This is one which is a so called no-brainer.
+We are often told to <a href="https://en.wikipedia.org/wiki/Composition_over_inheritance">favour composition over inheritance</a>.</p>
+<p>Well since one of the pillars of OOP is inheritance, it would be fair to say that this main feature of OOP is forcing us
+to code in a way that will make our application more complex.</p>
+<p>However, in OOP to do composition often requires us to perform code gymnastics and learn and apply design patterns thereby
+forcing us away from solving the business problem and instead come up with abstractions to compose our application.</p>
+<p>With programming based upon functional principles, composition is much easier as it is usually built into the language.</p>
+<h3><a name="Algebraic-sum-types" class="anchor" href="#Algebraic-sum-types">Algebraic sum types</a></h3>
+<p>Ignore the term "Algebraic sum types" for a minute and consider that in programming, we often have to <strong>model choices</strong> that we can have.</p>
+<p>The classic example that is often given is related to payment.</p>
+<p>For instance, we can pay by
+- Cash
+- Credit Card
+- Debit Card
+- Bit coin</p>
+<p>etc</p>
+<p>In F# this is trivial but in C# there is significantly more code that we have to write in order to achieve the same thing.</p>
+<p>So for instance in pseudo F# we would write</p>
+<p>PaymentMethod
+| Cash
+| CreditCard
+| DebitCard
+| BitCoin</p>
+<p>And a customer, again in pseudo F#, would be modelled as:</p>
+<p>Customer{
+Name string
+Age int
+PaymentMethod PaymentMethod
+}</p>
+<p>Then when it came time to pay, we would simply extract the method of payment and based upon each of the latter we'd invoke a different code pathway.</p>
+<p>Pay (PaymentMethod paymentMethod, amount decimal)
+{
+if paymentMethod == Cash then
+PayByCash(amount)
+elseif paymentMethod == CreditCard then
+PayByCreditCard(amount)
+etc
+}</p>
+<p>Effectively, you have the "Strategy Pattern" built into the language.</p>
+<p>These are but two of the features of functional programming which I have personally found have made my programming life much more enjoyable.</p>
+<p>It's a bit like having to write tests. We often do this because we want to gain greater confidence that our code is doing what it's supposed to do.</p>
+<p>However, in terms of business logic, the tests are not bringing any value in terms of functionality.</p>
+<p>So if you could get away with not writing any test code and still have the same level of confidence in your code, then I am sure you would do so.</p>
+<p>This is what I believe Algebraic sum types bring in functional languages such as F#.</p>
+<hr />
+<p>With F#, I have found that I have better flow meaning that I am able to concentrate more on solving the business problem rather than
+technical ones.</p>
+<p>With F#, I have suitable building blocks with which I can compose together in a readable and maintainable way.</p>
+<p>In fact, I have found that it's much easier and quicker to come back to legacy F# code as compared to C#.</p>
+<p>Moreover with F#, I find myself writing less code in a more declarative fashion thanks to the many higher order functions available.</p>
+<p>While there is certainly a learning curve to F#, I have found the concepts much more intuitive and straightforward than with C#.</p>
 
 
