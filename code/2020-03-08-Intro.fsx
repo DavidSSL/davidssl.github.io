@@ -203,4 +203,7 @@ In fact, I have found that it's much easier and quicker to come back to legacy F
 Moreover with F#, I find myself writing less code in a more declarative fashion thanks to the many higher order functions available.
 
 While there is certainly a learning curve to F#, I have found the concepts much more intuitive and straightforward than with C#.
+
+This will be more a stream of consciousness rather than a polished blog which means that I plan on revisiting
+old posts and improving them when I can.
 *)
